@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C618541821159AF70012E37C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C618541721159AF70012E37C /* AVKit.framework */; };
+		C618541C2115A24B0012E37C /* CCTVVideoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */; };
+		C618541E2115A7BE0012E37C /* CCTVVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */; };
+		C61854202115AAD20012E37C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541F2115AAD20012E37C /* UserData.swift */; };
+		C61854222115AADC0012E37C /* CCTVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61854212115AADC0012E37C /* CCTVData.swift */; };
 		C618D82B21142E9100FD01C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618D82A21142E9100FD01C2 /* AppDelegate.swift */; };
 		C618D83021142E9100FD01C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C618D82E21142E9100FD01C2 /* Main.storyboard */; };
 		C618D83321142E9100FD01C2 /* IdentiFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C618D83121142E9100FD01C2 /* IdentiFace.xcdatamodeld */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C618541721159AF70012E37C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVVideoListVC.swift; sourceTree = "<group>"; };
+		C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVVideoCell.swift; sourceTree = "<group>"; };
+		C618541F2115AAD20012E37C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C61854212115AADC0012E37C /* CCTVData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVData.swift; sourceTree = "<group>"; };
 		C618D82721142E9100FD01C2 /* IdentiFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdentiFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C618D82A21142E9100FD01C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C618D82F21142E9100FD01C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C618541821159AF70012E37C /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +72,8 @@
 		C6185414211596CD0012E37C /* CCTV */ = {
 			isa = PBXGroup;
 			children = (
+				C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */,
+				C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */,
 			);
 			path = CCTV;
 			sourceTree = "<group>";
@@ -69,8 +82,18 @@
 			isa = PBXGroup;
 			children = (
 				C618D83921142E9200FD01C2 /* Info.plist */,
+				C618541F2115AAD20012E37C /* UserData.swift */,
+				C61854212115AADC0012E37C /* CCTVData.swift */,
 			);
 			name = data;
+			sourceTree = "<group>";
+		};
+		C618541621159AF60012E37C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C618541721159AF70012E37C /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C618D81E21142E9100FD01C2 = {
@@ -78,6 +101,7 @@
 			children = (
 				C618D82921142E9100FD01C2 /* IdentiFace */,
 				C618D82821142E9100FD01C2 /* Products */,
+				C618541621159AF60012E37C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,7 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C618541C2115A24B0012E37C /* CCTVVideoListVC.swift in Sources */,
+				C618541E2115A7BE0012E37C /* CCTVVideoCell.swift in Sources */,
 				C618D82B21142E9100FD01C2 /* AppDelegate.swift in Sources */,
+				C61854222115AADC0012E37C /* CCTVData.swift in Sources */,
+				C61854202115AAD20012E37C /* UserData.swift in Sources */,
 				C618D83321142E9100FD01C2 /* IdentiFace.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
