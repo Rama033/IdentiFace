@@ -7,24 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DB30D9A734551475147E380 /* Pods_IdentiFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15A0865758B59AF0DD15014 /* Pods_IdentiFace.framework */; };
 		C618541821159AF70012E37C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C618541721159AF70012E37C /* AVKit.framework */; };
 		C618541C2115A24B0012E37C /* CCTVVideoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */; };
 		C618541E2115A7BE0012E37C /* CCTVVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */; };
 		C61854202115AAD20012E37C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541F2115AAD20012E37C /* UserData.swift */; };
 		C61854222115AADC0012E37C /* CCTVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61854212115AADC0012E37C /* CCTVData.swift */; };
+		C61854242115B0E60012E37C /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61854232115B0E60012E37C /* UserListCell.swift */; };
+		C61854332115C1430012E37C /* UserManagementListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61854322115C1430012E37C /* UserManagementListVC.swift */; };
+		C61854352115C1760012E37C /* UserFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61854342115C1760012E37C /* UserFormVC.swift */; };
+		C61854372115C1DF0012E37C /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61854362115C1DF0012E37C /* UserInfoVC.swift */; };
 		C618D82B21142E9100FD01C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618D82A21142E9100FD01C2 /* AppDelegate.swift */; };
 		C618D83021142E9100FD01C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C618D82E21142E9100FD01C2 /* Main.storyboard */; };
 		C618D83321142E9100FD01C2 /* IdentiFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C618D83121142E9100FD01C2 /* IdentiFace.xcdatamodeld */; };
 		C618D83521142E9200FD01C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C618D83421142E9200FD01C2 /* Assets.xcassets */; };
 		C618D83821142E9200FD01C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C618D83621142E9200FD01C2 /* LaunchScreen.storyboard */; };
+		C619331C2126917C009D2C18 /* default_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = C619331B2126917C009D2C18 /* default_photo.png */; };
+		C61A7992211AFAAD0050343F /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A7991211AFAAD0050343F /* UserDAO.swift */; };
+		C61D37B02128118700C5270F /* DataSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D37AF2128118700C5270F /* DataSync.swift */; };
+		C638820B211C0934003B1537 /* CCTVDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638820A211C0934003B1537 /* CCTVDAO.swift */; };
+		C643E0112122DE7B003575AF /* add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = C643E0102122DE7B003575AF /* add_photo.png */; };
+		C68513362126B2080020761B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68513352126B2080020761B /* UserNotifications.framework */; };
+		C68513382126B20F0020761B /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68513372126B20F0020761B /* PushKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D03DBFCE9A7D4948A45BC3F /* Pods-IdentiFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentiFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IdentiFace/Pods-IdentiFace.debug.xcconfig"; sourceTree = "<group>"; };
+		C15A0865758B59AF0DD15014 /* Pods_IdentiFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdentiFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C618541721159AF70012E37C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVVideoListVC.swift; sourceTree = "<group>"; };
 		C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVVideoCell.swift; sourceTree = "<group>"; };
 		C618541F2115AAD20012E37C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C61854212115AADC0012E37C /* CCTVData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVData.swift; sourceTree = "<group>"; };
+		C61854232115B0E60012E37C /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		C61854322115C1430012E37C /* UserManagementListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementListVC.swift; sourceTree = "<group>"; };
+		C61854342115C1760012E37C /* UserFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFormVC.swift; sourceTree = "<group>"; };
+		C61854362115C1DF0012E37C /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		C618D82721142E9100FD01C2 /* IdentiFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdentiFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C618D82A21142E9100FD01C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C618D82F21142E9100FD01C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +50,15 @@
 		C618D83421142E9200FD01C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C618D83721142E9200FD01C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C618D83921142E9200FD01C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C619331B2126917C009D2C18 /* default_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_photo.png; sourceTree = "<group>"; };
+		C61A7991211AFAAD0050343F /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		C61D37AF2128118700C5270F /* DataSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSync.swift; sourceTree = "<group>"; };
+		C638820A211C0934003B1537 /* CCTVDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVDAO.swift; sourceTree = "<group>"; };
+		C643E0102122DE7B003575AF /* add_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo.png; sourceTree = "<group>"; };
+		C68513342126B1EA0020761B /* IdentiFace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdentiFace.entitlements; sourceTree = "<group>"; };
+		C68513352126B2080020761B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		C68513372126B20F0020761B /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		F3154774019D00F98B25B4BE /* Pods-IdentiFace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentiFace.release.xcconfig"; path = "Pods/Target Support Files/Pods-IdentiFace/Pods-IdentiFace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,69 +66,93 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68513382126B20F0020761B /* PushKit.framework in Frameworks */,
+				C68513362126B2080020761B /* UserNotifications.framework in Frameworks */,
 				C618541821159AF70012E37C /* AVKit.framework in Frameworks */,
+				2DB30D9A734551475147E380 /* Pods_IdentiFace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C6185411211596B40012E37C /* StoryBoard */ = {
+		7B2DE8DB92DFD56453A91323 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C618D83621142E9200FD01C2 /* LaunchScreen.storyboard */,
-				C618D82E21142E9100FD01C2 /* Main.storyboard */,
+				4D03DBFCE9A7D4948A45BC3F /* Pods-IdentiFace.debug.xcconfig */,
+				F3154774019D00F98B25B4BE /* Pods-IdentiFace.release.xcconfig */,
 			);
-			name = StoryBoard;
-			sourceTree = "<group>";
-		};
-		C6185412211596BC0012E37C /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		C6185413211596C20012E37C /* UserManagement */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UserManagement;
-			sourceTree = "<group>";
-		};
-		C6185414211596CD0012E37C /* CCTV */ = {
-			isa = PBXGroup;
-			children = (
-				C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */,
-				C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */,
-			);
-			path = CCTV;
-			sourceTree = "<group>";
-		};
-		C6185415211596E20012E37C /* data */ = {
-			isa = PBXGroup;
-			children = (
-				C618D83921142E9200FD01C2 /* Info.plist */,
-				C618541F2115AAD20012E37C /* UserData.swift */,
-				C61854212115AADC0012E37C /* CCTVData.swift */,
-			);
-			name = data;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C618541621159AF60012E37C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C68513372126B20F0020761B /* PushKit.framework */,
+				C68513352126B2080020761B /* UserNotifications.framework */,
 				C618541721159AF70012E37C /* AVKit.framework */,
+				C15A0865758B59AF0DD15014 /* Pods_IdentiFace.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C618542A2115BB0B0012E37C /* CCTV */ = {
+			isa = PBXGroup;
+			children = (
+				C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */,
+				C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */,
+			);
+			name = CCTV;
+			sourceTree = "<group>";
+		};
+		C618542B2115BB1B0012E37C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C61854232115B0E60012E37C /* UserListCell.swift */,
+				C61854322115C1430012E37C /* UserManagementListVC.swift */,
+				C61854342115C1760012E37C /* UserFormVC.swift */,
+				C61854362115C1DF0012E37C /* UserInfoVC.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		C618542D2115BB2C0012E37C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C618541F2115AAD20012E37C /* UserData.swift */,
+				C61A7991211AFAAD0050343F /* UserDAO.swift */,
+				C61854212115AADC0012E37C /* CCTVData.swift */,
+				C638820A211C0934003B1537 /* CCTVDAO.swift */,
+				C61D37AF2128118700C5270F /* DataSync.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		C618542E2115BB300012E37C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C618D83621142E9200FD01C2 /* LaunchScreen.storyboard */,
+				C618D82E21142E9100FD01C2 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		C618542F2115BB5E0012E37C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C619331B2126917C009D2C18 /* default_photo.png */,
+				C643E0102122DE7B003575AF /* add_photo.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C618D81E21142E9100FD01C2 = {
 			isa = PBXGroup;
 			children = (
-				C618D82921142E9100FD01C2 /* IdentiFace */,
-				C618D82821142E9100FD01C2 /* Products */,
 				C618541621159AF60012E37C /* Frameworks */,
+				C618D82821142E9100FD01C2 /* Products */,
+				C618D82921142E9100FD01C2 /* IdentiFace */,
+				7B2DE8DB92DFD56453A91323 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,14 +167,16 @@
 		C618D82921142E9100FD01C2 /* IdentiFace */ = {
 			isa = PBXGroup;
 			children = (
-				C6185415211596E20012E37C /* data */,
-				C6185414211596CD0012E37C /* CCTV */,
-				C6185413211596C20012E37C /* UserManagement */,
-				C6185412211596BC0012E37C /* Setting */,
-				C6185411211596B40012E37C /* StoryBoard */,
-				C618D82A21142E9100FD01C2 /* AppDelegate.swift */,
-				C618D83421142E9200FD01C2 /* Assets.xcassets */,
+				C68513342126B1EA0020761B /* IdentiFace.entitlements */,
+				C618D83921142E9200FD01C2 /* Info.plist */,
 				C618D83121142E9100FD01C2 /* IdentiFace.xcdatamodeld */,
+				C618D83421142E9200FD01C2 /* Assets.xcassets */,
+				C618D82A21142E9100FD01C2 /* AppDelegate.swift */,
+				C618542F2115BB5E0012E37C /* Resources */,
+				C618542E2115BB300012E37C /* Storyboard */,
+				C618542D2115BB2C0012E37C /* Data */,
+				C618542A2115BB0B0012E37C /* CCTV */,
+				C618542B2115BB1B0012E37C /* User */,
 			);
 			path = IdentiFace;
 			sourceTree = "<group>";
@@ -135,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C618D83C21142E9200FD01C2 /* Build configuration list for PBXNativeTarget "IdentiFace" */;
 			buildPhases = (
+				C75D42BA1C0E8BF03ECE447F /* [CP] Check Pods Manifest.lock */,
 				C618D82321142E9100FD01C2 /* Sources */,
 				C618D82421142E9100FD01C2 /* Frameworks */,
 				C618D82521142E9100FD01C2 /* Resources */,
+				C48C03012A86FFD475D91FF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +215,14 @@
 				TargetAttributes = {
 					C618D82621142E9100FD01C2 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -186,25 +249,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C643E0112122DE7B003575AF /* add_photo.png in Resources */,
 				C618D83821142E9200FD01C2 /* LaunchScreen.storyboard in Resources */,
 				C618D83521142E9200FD01C2 /* Assets.xcassets in Resources */,
+				C619331C2126917C009D2C18 /* default_photo.png in Resources */,
 				C618D83021142E9100FD01C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C48C03012A86FFD475D91FF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IdentiFace/Pods-IdentiFace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IdentiFace/Pods-IdentiFace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C75D42BA1C0E8BF03ECE447F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IdentiFace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C618D82321142E9100FD01C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61854242115B0E60012E37C /* UserListCell.swift in Sources */,
 				C618541C2115A24B0012E37C /* CCTVVideoListVC.swift in Sources */,
 				C618541E2115A7BE0012E37C /* CCTVVideoCell.swift in Sources */,
 				C618D82B21142E9100FD01C2 /* AppDelegate.swift in Sources */,
+				C638820B211C0934003B1537 /* CCTVDAO.swift in Sources */,
 				C61854222115AADC0012E37C /* CCTVData.swift in Sources */,
 				C61854202115AAD20012E37C /* UserData.swift in Sources */,
+				C61854332115C1430012E37C /* UserManagementListVC.swift in Sources */,
+				C61D37B02128118700C5270F /* DataSync.swift in Sources */,
+				C61854352115C1760012E37C /* UserFormVC.swift in Sources */,
+				C61A7992211AFAAD0050343F /* UserDAO.swift in Sources */,
 				C618D83321142E9100FD01C2 /* IdentiFace.xcdatamodeld in Sources */,
+				C61854372115C1DF0012E37C /* UserInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,9 +457,13 @@
 		};
 		C618D83D21142E9200FD01C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D03DBFCE9A7D4948A45BC3F /* Pods-IdentiFace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IdentiFace/IdentiFace.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JD58Q3C8XJ;
 				INFOPLIST_FILE = IdentiFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -356,6 +471,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rama033.IdentiFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,9 +480,13 @@
 		};
 		C618D83E21142E9200FD01C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3154774019D00F98B25B4BE /* Pods-IdentiFace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IdentiFace/IdentiFace.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JD58Q3C8XJ;
 				INFOPLIST_FILE = IdentiFace/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,6 +494,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rama033.IdentiFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
