@@ -1,5 +1,5 @@
 //
-//  CCTVVideoCell.swift
+//  UserListCell.swift
 //  IdentiFace
 //
 //  Created by CE-MAC-23 on 2018. 8. 4..
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class CCTVVideoCell: UITableViewCell {
-    @IBOutlet var timeLabel: UILabel!
-    @IBOutlet var dayLabel: UILabel!
+class UserListCell: UITableViewCell {
+    @IBOutlet var userImage: UIImageView!
+    @IBOutlet var userName: UILabel!
+    @IBOutlet var userMemo: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

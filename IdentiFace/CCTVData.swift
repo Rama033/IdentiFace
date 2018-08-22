@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import CoreData
+
+class CCTVData {
+    var timeInfo: String?
+    var dayInfo: String?
+    var urlInfo: String?
+    
+    var objectID: NSManagedObjectID? = nil
+}

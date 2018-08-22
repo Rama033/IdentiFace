@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import UIKit
+import CoreData
+
+class UserData {
+    var name: String?
+    var image: UIImage!
+    var memo: String? = ""
+    var objectID: NSManagedObjectID? = nil
+}

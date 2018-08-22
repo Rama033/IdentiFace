@@ -8,16 +8,55 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var cctvList = [CCTVData]()
+    var userList = [UserData]()
+    
+    lazy var cctvDAO = CCTVDAO()
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.badge, .alert, .sound]) { (granted, error) in
+            if granted {
+                DispatchQueue.main.async() {
+                    UIApplication.shared.registerForRemoteNotifications()
+                }
+            }
+        }
         return true
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let deviceTokenString = deviceToken.reduce("") { $0 + String(format: "%02X", $1) }
+        print("등록된 토큰은  \(deviceTokenString) 입니다.")
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Error occured : \(error)")
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        guard let aps = userInfo["aps"] as? NSDictionary else {
+            return
+        }
+        
+        if let body = aps["body"] as? String {
+            if body == "COMPLETE" {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "completeUpload"), object: nil)
+            } else {
+                return
+            }
+        } else {
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "resyncData"), object: nil)
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -36,6 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
