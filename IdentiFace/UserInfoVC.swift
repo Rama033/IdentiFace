@@ -10,11 +10,9 @@ import UIKit
 
 class UserInfoVC: UIViewController, UITextFieldDelegate {
     @IBOutlet var userImage: UIImageView!
-    @IBOutlet var userName: UITextField! {
-        didSet {
-            self.userName.delegate = self
-        }
-    }
+
+    @IBOutlet var userName: UILabel!
+    
     @IBOutlet var userMemo: UITextField! {
         didSet {
             self.userMemo.delegate = self
@@ -55,7 +53,7 @@ class UserInfoVC: UIViewController, UITextFieldDelegate {
         let data = self.appDelegate.userList[index]
         
         let newData = UserData()
-        newData.name = self.userName.text
+        newData.name = data.name
         newData.memo = self.userMemo.text
         
         userDAO.edit(objectID: data.objectID!, data: newData)

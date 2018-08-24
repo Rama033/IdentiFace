@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 import CoreData
 import Alamofire
 
@@ -51,5 +52,46 @@ class DataSync {
                 }
             }
         }
+    }
+    
+    func uploadData(_ image: UIImage?, name: String) {
+        let url = self.serverURL("upload")
+        guard let img = image else { return }
+        print(img)
+        
+        let imgData = UIImagePNGRepresentation(img)?.base64EncodedString()
+        let param: Parameters = ["name" : name,
+                                "image" : imgData!]
+        let call = Alamofire.request(url, method: .post, parameters: param, encoding: JSONEncoding.default)
+        call.responseJSON
+    }
+    
+    func checkStart() {
+        let url = self.serverURL("check")
+        Alamofire.request(url)
+    }
+    
+    func getImage(vc: UserFormVC) {
+        let url = self.serverURL("get")
+        let param: Parameters = ["name" : vc.userName.text!]
+        let get = Alamofire.request(url, method: .post, parameters: param, encoding: JSONEncoding.default)
+        
+        DispatchQueue.main.async {
+            get.responseJSON { res in
+                guard let jsonObject = res.result.value as? NSDictionary else { return }
+                guard let encoded_img = jsonObject["image"] as? String else { return }
+                guard let img = Data(base64Encoded: encoded_img) else { return }
+                
+                vc.userImage.image = UIImage(data: img)
+                vc.imageIsAdded = true
+                vc.imageAddingProgress = false
+            }
+        }
+    }
+    
+    func deleteImage(name: String) {
+        let url = self.serverURL("delete")
+        let param: Parameters = ["name" : name]
+        Alamofire.request(url, method: .post, parameters: param, encoding: JSONEncoding.default)
     }
 }

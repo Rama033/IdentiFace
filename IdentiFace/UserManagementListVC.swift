@@ -57,8 +57,11 @@ class UserManagementListVC: UITableViewController, UISearchBarDelegate {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if let objectID = self.appDelegate.userList[indexPath.row].objectID {
             if self.userDAO.delete(objectID) {
+                let sync = DataSync()
+                sync.deleteImage(name: self.appDelegate.userList[indexPath.row].name!)
                 self.appDelegate.userList.remove(at: indexPath.row)
                 tableView.deleteRows(at: [indexPath], with: .fade)
+
             }
         }
     }

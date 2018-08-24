@@ -48,8 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return
         }
         
-        if let body = aps["body"] as? String {
-            if body == "COMPLETE" {
+        if let result = aps["result"] as? String {
+            if result == "COMPLETE" {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "completeUpload"), object: nil)
             } else {
                 return

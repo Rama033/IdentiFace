@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2DB30D9A734551475147E380 /* Pods_IdentiFace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15A0865758B59AF0DD15014 /* Pods_IdentiFace.framework */; };
+		C60D1160212FAA0300B793A9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60D115F212FAA0300B793A9 /* Extensions.swift */; };
 		C618541821159AF70012E37C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C618541721159AF70012E37C /* AVKit.framework */; };
 		C618541C2115A24B0012E37C /* CCTVVideoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */; };
 		C618541E2115A7BE0012E37C /* CCTVVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */; };
@@ -27,6 +28,7 @@
 		C61D37B02128118700C5270F /* DataSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D37AF2128118700C5270F /* DataSync.swift */; };
 		C638820B211C0934003B1537 /* CCTVDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C638820A211C0934003B1537 /* CCTVDAO.swift */; };
 		C643E0112122DE7B003575AF /* add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = C643E0102122DE7B003575AF /* add_photo.png */; };
+		C65EC606212D224200B8CB50 /* UserFaceEnrollmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65EC605212D224200B8CB50 /* UserFaceEnrollmentVC.swift */; };
 		C68513362126B2080020761B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68513352126B2080020761B /* UserNotifications.framework */; };
 		C68513382126B20F0020761B /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68513372126B20F0020761B /* PushKit.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,7 @@
 /* Begin PBXFileReference section */
 		4D03DBFCE9A7D4948A45BC3F /* Pods-IdentiFace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdentiFace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IdentiFace/Pods-IdentiFace.debug.xcconfig"; sourceTree = "<group>"; };
 		C15A0865758B59AF0DD15014 /* Pods_IdentiFace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdentiFace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60D115F212FAA0300B793A9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C618541721159AF70012E37C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		C618541B2115A24B0012E37C /* CCTVVideoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVVideoListVC.swift; sourceTree = "<group>"; };
 		C618541D2115A7BE0012E37C /* CCTVVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVVideoCell.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		C61D37AF2128118700C5270F /* DataSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSync.swift; sourceTree = "<group>"; };
 		C638820A211C0934003B1537 /* CCTVDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTVDAO.swift; sourceTree = "<group>"; };
 		C643E0102122DE7B003575AF /* add_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_photo.png; sourceTree = "<group>"; };
+		C65EC605212D224200B8CB50 /* UserFaceEnrollmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFaceEnrollmentVC.swift; sourceTree = "<group>"; };
 		C68513342126B1EA0020761B /* IdentiFace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IdentiFace.entitlements; sourceTree = "<group>"; };
 		C68513352126B2080020761B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		C68513372126B20F0020761B /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
@@ -112,6 +116,7 @@
 				C61854322115C1430012E37C /* UserManagementListVC.swift */,
 				C61854342115C1760012E37C /* UserFormVC.swift */,
 				C61854362115C1DF0012E37C /* UserInfoVC.swift */,
+				C65EC605212D224200B8CB50 /* UserFaceEnrollmentVC.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				C61854212115AADC0012E37C /* CCTVData.swift */,
 				C638820A211C0934003B1537 /* CCTVDAO.swift */,
 				C61D37AF2128118700C5270F /* DataSync.swift */,
+				C60D115F212FAA0300B793A9 /* Extensions.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 			files = (
 				C61854242115B0E60012E37C /* UserListCell.swift in Sources */,
 				C618541C2115A24B0012E37C /* CCTVVideoListVC.swift in Sources */,
+				C65EC606212D224200B8CB50 /* UserFaceEnrollmentVC.swift in Sources */,
 				C618541E2115A7BE0012E37C /* CCTVVideoCell.swift in Sources */,
 				C618D82B21142E9100FD01C2 /* AppDelegate.swift in Sources */,
 				C638820B211C0934003B1537 /* CCTVDAO.swift in Sources */,
@@ -312,6 +319,7 @@
 				C61854202115AAD20012E37C /* UserData.swift in Sources */,
 				C61854332115C1430012E37C /* UserManagementListVC.swift in Sources */,
 				C61D37B02128118700C5270F /* DataSync.swift in Sources */,
+				C60D1160212FAA0300B793A9 /* Extensions.swift in Sources */,
 				C61854352115C1760012E37C /* UserFormVC.swift in Sources */,
 				C61A7992211AFAAD0050343F /* UserDAO.swift in Sources */,
 				C618D83321142E9100FD01C2 /* IdentiFace.xcdatamodeld in Sources */,
